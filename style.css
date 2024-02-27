@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Varela+Round&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+/* Upper Nav Bar */
+
+.Upper-nav{
+    box-shadow: 0px 5px 10px black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    background: none;  
+}
+
+.Upper-nav nav{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: none;
+}
+
+.Upper-nav nav a{
+    display: inline-block;
+    font-family: 'Nova Round', cursive;
+    font-size: xx-large;
+    font-weight: 1000;
+    text-decoration: none;
+    color: black;
+    background: none;
+    margin-left: 13px;
+    margin-top: 5px;
+}
+
+.Upper-nav nav ul{
+    display: inline-block;
+    list-style: none;
+    margin-left: 1540px;
+}
+
+.Upper-nav nav ul li a{
+    position: relative;
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: xx-large;
+    font-weight: 1000;
+    text-decoration: none;
+    color: black;
+    background: none;   
+}
+
+.Upper-nav nav ul li a:after{
+    position: absolute;
+        content: '';
+        height: 1.5px;
+        bottom: -4px; 
+        margin: 0 auto;
+		left: 0;
+        right: 0;
+		width: 0;
+		background: black;
+        border-radius: 18%;
+        transition: 0.3s;
+}
+
+.Upper-nav nav ul li a:hover:after{
+    width: 100%;
+    height: 3px;
+}
+
+/* Video Content */
+
+.Content-C .Content-in-C{
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 470px;
+    margin-left: auto;
+    z-index: 1;
+    text-align: center;
+    opacity: 1;
+    transition: 1s;
+}
+
+.Content-C .removeC{
+    opacity: 0;
+}
+
+.Content-C .Content-in-C p{
+    padding: 0;
+    margin: 5;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+.Content-C .Content-in-C button{
+    padding: 0;
+    margin: 5;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+    background: none;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    width: 12%;
+    transition: 0.5s;
+}
+
+.Content-C .Content-in-C button:hover{
+    padding: 0;
+    margin: 5;
+    color: lightgreen;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+    background: none;
+    border-radius: 20px;
+    border-color: lightgreen;
+    border-style: solid;
+    width: 12%;
+    cursor: pointer;
+}
+
+.Content-C video{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: -1;
+} 
+
+/* Lower nav */
+
+.Lower-nav{
+    box-shadow: 0 2px 10px 7px black;
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    background: white;
+}
+
+.Lower-nav nav{
+    margin-top: 25px;
+    margin-right: 45px;
+    text-align: center;
+}
+
+.Lower-nav nav ul li{
+    display: inline-block;
+}
+
+.Lower-nav nav ul {
+    list-style: none;
+}
+
+.Lower-nav nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+    margin: 10px;
+    position: relative;
+}
+
+.Lower-nav nav ul li a:after{
+    position: absolute;
+    content: '';
+    height: 1.5px;
+    width: 100%;
+    background: black;
+    margin: 0 auto;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    width: 0;
+    border-radius: 18%;
+    transition: 0.3s;
+}
+
+.Lower-nav nav ul li a:hover:after{
+    width: 100%;
+    height: 3px;
+}
+
+/* shop list seciton */
+
+.Content-S {
+    width: 100%;
+    height: 1400px;
+    background: rgba(255,233,233,0.5);
+    display: inline-block;
+}
+
+.Content-S p{
+    color: black;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 50px;
+    font-weight: 1000;
+    margin-top: 3%;
+    position: relative;
+    text-align: center;
+}
+
+.Content-S ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-top: 50px;
+    
+}
+
+.Content-S ul li{
+    width: 13%;
+    height: 25%;
+    background: #f0f0f0;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    margin-left: 55px;
+}
+
+.Content-S ul li div{
+    width: 100%;
+    background: pink;
+    height: 68%;
+    overflow: hidden;
+}
+
+.Content-S ul li div img{
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.Content-S ul li:hover div img{
+    transform: scale(1.2);
+}
+
+.Content-S ul li p{
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.Content-S ul li a{
+    padding:0;
+    margin: 2px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.Content-S ul li button{
+    display: grid;
+    width: 90%;
+    height: 10%;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 8px;
+    padding: 3px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+    transition: 0.5s;
+    background: #CDE990;
+    border-width: 1px;
+}
+
+.Content-S ul li button:hover{
+    background: #AACB73;
+    border: none;
+    cursor: pointer;
+}
+
+.Content-S ul li p:after{
+    width: 0;
+}
+
+/* rating section */
+
+.Content-R {
+    box-shadow: 0 2px 10px 3px black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 60%;
+    background: rgb(226, 218, 218);
+    display: inline-block;
+}
+
+.Content-R p{
+    padding:0;
+    color: black;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 50px;
+    font-weight: 1000;
+    margin-top: 2%;
+    margin-bottom: 0;
+    text-align: center;
+    display: relative;
+}
+
+.Content-R ul{
+    list-style: none;
+}
+
+.Content-R ul li{
+    width: 29%;
+    height: 65%;
+    margin-left: 50px;
+    background: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.Content-R ul li div{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background: none;
+    overflow: hidden;
+}
+
+.Content-R ul li div img{
+    max-width: 100%;
+}
+
+.Content-R ul li .User{
+    display: inline-block;
+    text-align: left;
+}
+
+.Content-R ul li p{
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 28px;
+    text-align: left;
+    position: relative;
+}
+
+.Content-R ul li .Pangkat{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.Content-R ul li .rating{
+    color: gold;
+}
+
+.Content-R ul li .Comment{
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 240px;
+    background: #3C486B;
+    display: inline-block;
+}
+
+.footer p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 50px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+
+.footer div{
+    padding: 0;
+    margin: 0;
+}
+
+.footer div p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer .logo{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer .logo img{
+    width: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    filter: invert(100%);
+}
+
+.footer .logo img:hover{
+    filter: invert(0%);
+}
+
+.footer .copy-kanan{
+    margin-top: 15px;
+    font-weight: 10;
+}
+
+/* responsive */
+@media only screen and (max-width: 1300px) {
+    /* upper nav */
+    .Upper-nav nav ul{
+        display: inline-block;
+        list-style: none;
+        margin-left: 900px;
+    }    
+    /* video section */
+    .Content-C .Content-in-C{
+        padding: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: 305px;
+        margin-left: auto;
+        z-index: 1;
+        text-align: center;
+        opacity: 1;
+        transition: 1s;
+    }
+    .Content-C .Content-in-C p{
+        padding: 0;
+        margin: 5;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 45px;
+        font-weight: 1000;
+    }
+    .Content-C .removeC{
+        opacity: 0;
+    }
+    .removeC{
+        opacity: 0;
+    }
+    .Content-C .Content-in-C button{
+        padding: 0;
+        margin: 5;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 30px;
+        font-weight: 1000;
+        background: none;
+        border-radius: 20px;
+        border-color: white;
+        border-style: solid;
+        width: 18%;
+        transition: 0.5s;
+    }
+    .Content-C .Content-in-C button:hover{
+        padding: 0;
+        margin: 5;
+        color: lightgreen;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 30px;
+        font-weight: 1000;
+        background: none;
+        border-radius: 20px;
+        border-color: lightgreen;
+        border-style: solid;
+        width: 18%;
+        cursor: pointer;
+    }
+    /* shop section */
+    .Content-S ul li div{
+        width: 100%;
+        background: pink;
+        height: 64%;
+        overflow: hidden;
+    }
+    .Content-S ul li{
+        width: 15%;
+        height: 24%;
+        background: #f0f0f0;
+        border-style: solid;
+        border-width: 1px;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .Content-S {
+        width: 100%;
+        height: 1200px;
+        background: rgba(255,233,233,0.5);
+        display: inline-block;
+    }
+    .Content-S ul li button{
+        display: grid;
+        width: 90%;
+        height: 12%;
+        position: relative;
+        text-align: center;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 12px;
+        padding: 2.5px;
+        color: black;
+        text-decoration: none;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+        font-weight: 1000;
+        transition: 0.5s;
+    }
+    .Content-S ul li p{
+        padding: 0;
+        margin: 0;
+        color: black;
+        text-decoration: none;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 15px;
+        font-weight: 1000;
+        margin-top: 15px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    
+    /* review */
+    .Content-R ul li{
+        width: 30%;
+        height: 65%;
+        margin-left: 18px;
+        background: white;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .Content-R ul li div{
+        margin: 10px;
+        width: 130px;
+        height: 120px;
+        background: none;
+        overflow: hidden;
+    }
+    .Content-R ul li p{
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 19px;
+        text-align: left;
+        position: relative;
+    }
+    .Content-R ul li .Pangkat{
+        font-size: 15px;
+        font-weight: 100;
+    }
+    .Content-R ul li .Comment{
+        font-size: 25px;
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    /* footer */
+    .footer p{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding: 0;
+        color: white;
+        text-decoration: none;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 40px;
+        font-weight: 1000;
+        text-align: center;
+    }
+    .footer .logo img{
+        width: 35px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: black;
+        border-width: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+        filter: invert(100%);
+    }
+    .footer{
+        width: 100%;
+        height: 200px;
+        background: #3C486B;
+        display: inline-block;
+    }
+  }
